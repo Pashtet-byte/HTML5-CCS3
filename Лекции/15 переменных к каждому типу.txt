@@ -1,0 +1,439 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        //#1
+        Console.WriteLine("Bool\n");
+
+        bool aBoll = false;
+        bool bBoll = true;
+
+        Console.WriteLine($"User number = {aBoll} ");
+        Console.WriteLine($"User number = {bBoll} ");
+
+        //#2
+        Console.WriteLine("\nByte\n");
+
+        byte aByte = 0;
+        byte bByte = 1;
+        byte cByte = 2;
+        byte dByte = 3;
+        byte eByte = 4;
+        byte fByte = 5;
+        byte gByte = 6;
+        byte hByte = 7;
+        byte iByte = 8;
+        byte jByte = 9;
+        byte kByte = 10;
+        byte lByte = 11;
+        byte mByte = 12;
+        byte nByte = 13;
+        byte oByte = 14;
+
+        Console.WriteLine($"User number = {aByte} ");
+        Console.WriteLine($"User number = {bByte} ");
+        Console.WriteLine($"User number = {cByte} ");
+        Console.WriteLine($"User number = {dByte} ");
+        Console.WriteLine($"User number = {eByte} ");
+        Console.WriteLine($"User number = {fByte} ");
+        Console.WriteLine($"User number = {gByte} ");
+        Console.WriteLine($"User number = {hByte} ");
+        Console.WriteLine($"User number = {iByte} ");
+        Console.WriteLine($"User number = {jByte} ");
+        Console.WriteLine($"User number = {kByte} ");
+        Console.WriteLine($"User number = {lByte} ");
+        Console.WriteLine($"User number = {mByte} ");
+        Console.WriteLine($"User number = {nByte} ");
+        Console.WriteLine($"User number = {oByte} ");
+
+        //#3
+        Console.WriteLine("\nChar\n");
+
+        char aC = 'A';
+        char bC = 'B';
+        char cC = 'C';
+        char dC = 'D';
+        char eC = 'E';
+        char fC = 'F';
+        char gC = 'G';
+        char hC = 'H';
+        char iC = 'I';
+        char jC = 'J';
+        char kC = 'K';
+        char lC = 'L';
+        char mC = 'M';
+        char nC = 'N';
+        char oC = 'O';
+
+        Console.WriteLine($"User number = {aC} ");
+        Console.WriteLine($"User number = {bC} ");
+        Console.WriteLine($"User number = {cC} ");
+        Console.WriteLine($"User number = {dC} ");
+        Console.WriteLine($"User number = {eC} ");
+        Console.WriteLine($"User number = {fC} ");
+        Console.WriteLine($"User number = {gC} ");
+        Console.WriteLine($"User number = {hC} ");
+        Console.WriteLine($"User number = {iC} ");
+        Console.WriteLine($"User number = {jC} ");
+        Console.WriteLine($"User number = {kC} ");
+        Console.WriteLine($"User number = {lC} ");
+        Console.WriteLine($"User number = {mC} ");
+        Console.WriteLine($"User number = {nC} ");
+        Console.WriteLine($"User number = {oC} ");
+
+        //#4
+        Console.WriteLine("\nDecimal\n");
+
+        decimal d1 = 123.456m;
+        decimal d2 = -789.123m;
+        decimal d3 = 0.0000000000000000000000000001m;
+        decimal d4 = 9999999999999999999999999999.9999999999m;
+        decimal d5 = -79228162514264337593543950335m;
+        decimal d6 = 79228162514264337593543950335m;
+        decimal d7 = 3.1415926535897932384626433833m;
+        decimal d8 = 2.7182818284590452353602874714m;
+        decimal d9 = 1000000.000001m;
+        decimal d10 = -0.000000000000000000000000001m;
+        decimal d11 = 1234567890123456789012345678.9012345678m;
+        decimal d12 = 1.2345678901234567890123456789m;
+        decimal d13 = -9876543210987654321098765432.1098765432m;
+        decimal d14 = 0.0000000000000000000000000000m;
+        decimal d15 = 42.0m;
+
+        Console.WriteLine($"User number = {d1} ");
+        Console.WriteLine($"User number = {d2} ");
+        Console.WriteLine($"User number = {d3} ");
+        Console.WriteLine($"User number = {d4} ");
+        Console.WriteLine($"User number = {d5} ");
+        Console.WriteLine($"User number = {d6} ");
+        Console.WriteLine($"User number = {d7} ");
+        Console.WriteLine($"User number = {d8} ");
+        Console.WriteLine($"User number = {d9} ");
+        Console.WriteLine($"User number = {d10} ");
+        Console.WriteLine($"User number = {d11} ");
+        Console.WriteLine($"User number = {d12} ");
+        Console.WriteLine($"User number = {d13} ");
+        Console.WriteLine($"User number = {d14} ");
+        Console.WriteLine($"User number = {d15} ");
+
+        //#5
+        Console.WriteLine("\nDouble\n");
+
+        double db1 = 3.141592653589793;
+        double db2 = -2.718281828459045;
+        double db3 = 1.7976931348623157E+308;
+        double db4 = -1.7976931348623157E+308;
+        double db5 = 4.94065645841247E-324;
+        double db6 = 123456789012345.6789;
+        double db7 = -0.000000000000123456;
+        double db8 = 6.02214076E+23;
+        double db9 = 9.1093837015E-31;
+        double db10 = 299792458.0;
+        double db11 = 1.602176634E-19;
+        double db12 = 6.67430E-11;
+        double db13 = 0.0000000000000000000000000000000000000000001;
+        double db14 = 999999999999999999999999999999999999999.999;
+        double db15 = 52.0;
+
+        Console.WriteLine($"User number = {db1} ");
+        Console.WriteLine($"User number = {db2} ");
+        Console.WriteLine($"User number = {db3} ");
+        Console.WriteLine($"User number = {db4} ");
+        Console.WriteLine($"User number = {db5} ");
+        Console.WriteLine($"User number = {db6} ");
+        Console.WriteLine($"User number = {db7} ");
+        Console.WriteLine($"User number = {db8} ");
+        Console.WriteLine($"User number = {db9} ");
+        Console.WriteLine($"User number = {db10} ");
+        Console.WriteLine($"User number = {db11} ");
+        Console.WriteLine($"User number = {db12} ");
+        Console.WriteLine($"User number = {db13} ");
+        Console.WriteLine($"User number = {db14} ");
+        Console.WriteLine($"User number = {db15} ");
+
+        //#6
+        Console.WriteLine("\nFloat\n");
+
+        float f1 = 3.14159265f;
+        float f2 = -2.71828183f;
+        float f3 = 3.40282347E+38f;
+        float f4 = -3.40282347E+38f;
+        float f5 = 1.401298E-45f;
+        float f6 = 1234567.89f;
+        float f7 = -0.000000123456f;
+        float f8 = 6.02214E+23f;
+        float f9 = 9.10938E-31f;
+        float f10 = 299792458f;
+        float f11 = 1.60218E-19f;
+        float f12 = 6.67430E-11f;
+        float f13 = 0.000000000000000000000000000000000000001f;
+        float f14 = 99999999999999999999999999999999999.999f;
+        float f15 = 888.0f;
+
+        Console.WriteLine($"User number = {f1} ");
+        Console.WriteLine($"User number = {f2} ");
+        Console.WriteLine($"User number = {f3} ");
+        Console.WriteLine($"User number = {f4} ");
+        Console.WriteLine($"User number = {f5} ");
+        Console.WriteLine($"User number = {f6} ");
+        Console.WriteLine($"User number = {f7} ");
+        Console.WriteLine($"User number = {f8} ");
+        Console.WriteLine($"User number = {f9} ");
+        Console.WriteLine($"User number = {f10} ");
+        Console.WriteLine($"User number = {f11} ");
+        Console.WriteLine($"User number = {f12} ");
+        Console.WriteLine($"User number = {f13} ");
+        Console.WriteLine($"User number = {f14} ");
+        Console.WriteLine($"User number = {f15} ");
+
+        //#7
+        Console.WriteLine("\nInt\n");
+
+        int i1 = 75;
+        int i2 = 76;
+        int i3 = 77;
+        int i4 = 78;
+        int i5 = 79;
+        int i6 = 80;
+        int i7 = 81;
+        int i8 = 82;
+        int i9 = 83;
+        int i10 = 84;
+        int i11 = 85;
+        int i12 = 86;
+        int i13 = 87;
+        int i14 = 88;
+        int i15 = 89;
+
+        Console.WriteLine($"User number = {i1} ");
+        Console.WriteLine($"User number = {i2} ");
+        Console.WriteLine($"User number = {i3} ");
+        Console.WriteLine($"User number = {i4} ");
+        Console.WriteLine($"User number = {i5} ");
+        Console.WriteLine($"User number = {i6} ");
+        Console.WriteLine($"User number = {i7} ");
+        Console.WriteLine($"User number = {i8} ");
+        Console.WriteLine($"User number = {i9} ");
+        Console.WriteLine($"User number = {i10} ");
+        Console.WriteLine($"User number = {i11} ");
+        Console.WriteLine($"User number = {i12} ");
+        Console.WriteLine($"User number = {i13} ");
+        Console.WriteLine($"User number = {i14} ");
+        Console.WriteLine($"User number = {i15} ");
+
+        //#8
+        Console.WriteLine("\nLong\n");
+
+        long l1 = 734634;
+        long l2 = 9430566;
+        long l3 = 346872365;
+        long l4 = 3245793432470;
+        long l5 = 256133284;
+        long l6 = 234565;
+        long l7 = 243596875265;
+        long l8 = 908762345312895;
+        long l9 = 342568975214;
+        long l10 = 5647844234;
+        long l11 = 2598675612909876854;
+        long l12 = 234567;
+        long l13 = 4658234465;
+        long l14 = 723453;
+        long l15 = 3658727796;
+
+        Console.WriteLine($"User number = {l1} ");
+        Console.WriteLine($"User number = {l2} ");
+        Console.WriteLine($"User number = {l3} ");
+        Console.WriteLine($"User number = {l4} ");
+        Console.WriteLine($"User number = {l5} ");
+        Console.WriteLine($"User number = {l6} ");
+        Console.WriteLine($"User number = {l7} ");
+        Console.WriteLine($"User number = {l8} ");
+        Console.WriteLine($"User number = {l9} ");
+        Console.WriteLine($"User number = {l10} ");
+        Console.WriteLine($"User number = {l11} ");
+        Console.WriteLine($"User number = {l12} ");
+        Console.WriteLine($"User number = {l13} ");
+        Console.WriteLine($"User number = {l14} ");
+        Console.WriteLine($"User number = {l15} ");
+
+        //#9
+        Console.WriteLine("\nSbyte\n");
+
+        sbyte sb1 = -10;
+        sbyte sb2 = -9;
+        sbyte sb3 = -8;
+        sbyte sb4 = -7;
+        sbyte sb5 = -6;
+        sbyte sb6 = -5;
+        sbyte sb7 = -4;
+        sbyte sb8 = -3;
+        sbyte sb9 = -2;
+        sbyte sb10 = -1;
+        sbyte sb11 = 0;
+        sbyte sb12 = 1;
+        sbyte sb13 = 2;
+        sbyte sb14 = 3;
+        sbyte sb15 = 4;
+
+        Console.WriteLine($"User number = {sb1} ");
+        Console.WriteLine($"User number = {sb2} ");
+        Console.WriteLine($"User number = {sb3} ");
+        Console.WriteLine($"User number = {sb4} ");
+        Console.WriteLine($"User number = {sb5} ");
+        Console.WriteLine($"User number = {sb6} ");
+        Console.WriteLine($"User number = {sb7} ");
+        Console.WriteLine($"User number = {sb8} ");
+        Console.WriteLine($"User number = {sb9} ");
+        Console.WriteLine($"User number = {sb10} ");
+        Console.WriteLine($"User number = {sb11} ");
+        Console.WriteLine($"User number = {sb12} ");
+        Console.WriteLine($"User number = {sb13} ");
+        Console.WriteLine($"User number = {sb14} ");
+        Console.WriteLine($"User number = {sb15} ");
+
+        //#10
+        Console.WriteLine("\nShort\n");
+
+        short s1 = -100;
+        short s2 = 100;
+        short s3 = -99;
+        short s4 = 99;
+        short s5 = -98;
+        short s6 = 98;
+        short s7 = -97;
+        short s8 = 97;
+        short s9 = -96;
+        short s10 = 96;
+        short s11 = -95;
+        short s12 = 95;
+        short s13 = -94;
+        short s14 = 94;
+        short s15 = 0;
+
+        Console.WriteLine($"User number = {s1} ");
+        Console.WriteLine($"User number = {s2} ");
+        Console.WriteLine($"User number = {s3} ");
+        Console.WriteLine($"User number = {s4} ");
+        Console.WriteLine($"User number = {s5} ");
+        Console.WriteLine($"User number = {s6} ");
+        Console.WriteLine($"User number = {s7} ");
+        Console.WriteLine($"User number = {s8} ");
+        Console.WriteLine($"User number = {s9} ");
+        Console.WriteLine($"User number = {s10} ");
+        Console.WriteLine($"User number = {s11} ");
+        Console.WriteLine($"User number = {s12} ");
+        Console.WriteLine($"User number = {s13} ");
+        Console.WriteLine($"User number = {s14} ");
+        Console.WriteLine($"User number = {s15} ");
+
+        //#11
+        Console.WriteLine("\nUint\n");
+
+        uint ui1 = 34023;
+        uint ui2 = 23456;
+        uint ui3 = 14;
+        uint ui4 = 2345;
+        uint ui5 = 2891;
+        uint ui6 = 5231;
+        uint ui7 = 9546;
+        uint ui8 = 43187;
+        uint ui9 = 32171;
+        uint ui10 = 823;
+        uint ui11 = 52;
+        uint ui12 = 2346;
+        uint ui13 = 9825;
+        uint ui14 = 21435;
+        uint ui15 = 1237;
+
+        Console.WriteLine($"User number = {ui1} ");
+        Console.WriteLine($"User number = {ui2} ");
+        Console.WriteLine($"User number = {ui3} ");
+        Console.WriteLine($"User number = {ui4} ");
+        Console.WriteLine($"User number = {ui5} ");
+        Console.WriteLine($"User number = {ui6} ");
+        Console.WriteLine($"User number = {ui7} ");
+        Console.WriteLine($"User number = {ui8} ");
+        Console.WriteLine($"User number = {ui9} ");
+        Console.WriteLine($"User number = {ui10} ");
+        Console.WriteLine($"User number = {ui11} ");
+        Console.WriteLine($"User number = {ui12} ");
+        Console.WriteLine($"User number = {ui13} ");
+        Console.WriteLine($"User number = {ui14} ");
+        Console.WriteLine($"User number = {ui15} ");
+        
+        //#12
+        Console.WriteLine("\nUlong\n");
+
+        ulong ul1 = 4356;
+        ulong ul2 = 2346578;
+        ulong ul3 = 23456;
+        ulong ul4 = 79865;
+        ulong ul5 = 2367534;
+        ulong ul6 = 3425632;
+        ulong ul7 = 3456;
+        ulong ul8 = 3245687;
+        ulong ul9 = 234506;
+        ulong ul10 = 23457;
+        ulong ul11 = 2345;
+        ulong ul12 = 153;
+        ulong ul13 = 345687;
+        ulong ul14 = 23458;
+        ulong ul15 = 235463;
+
+        Console.WriteLine($"User number = {ul1} ");
+        Console.WriteLine($"User number = {ul2} ");
+        Console.WriteLine($"User number = {ul3} ");
+        Console.WriteLine($"User number = {ul4} ");
+        Console.WriteLine($"User number = {ul5} ");
+        Console.WriteLine($"User number = {ul6} ");
+        Console.WriteLine($"User number = {ul7} ");
+        Console.WriteLine($"User number = {ul8} ");
+        Console.WriteLine($"User number = {ul9} ");
+        Console.WriteLine($"User number = {ul10} ");
+        Console.WriteLine($"User number = {ul11} ");
+        Console.WriteLine($"User number = {ul12} ");
+        Console.WriteLine($"User number = {ul13} ");
+        Console.WriteLine($"User number = {ul14} ");
+        Console.WriteLine($"User number = {ul15} ");
+
+        //#13
+        Console.WriteLine("\nUshort\n");
+
+        ushort us1 = 183;
+        ushort us2 = 0;
+        ushort us3 = 2456;
+        ushort us4 = 375;
+        ushort us5 = 34568;
+        ushort us6 = 1432;
+        ushort us7 = 945;
+        ushort us8 = 1448;
+        ushort us9 = 2348;
+        ushort us10 = 234;
+        ushort us11 = 850;
+        ushort us12 = 34054;
+        ushort us13 = 3245;
+        ushort us14 = 74;
+        ushort us15 = 8;
+
+        Console.WriteLine($"User number = {us1} ");
+        Console.WriteLine($"User number = {us2} ");
+        Console.WriteLine($"User number = {us3} ");
+        Console.WriteLine($"User number = {us4} ");
+        Console.WriteLine($"User number = {us5} ");
+        Console.WriteLine($"User number = {us6} ");
+        Console.WriteLine($"User number = {us7} ");
+        Console.WriteLine($"User number = {us8} ");
+        Console.WriteLine($"User number = {us9} ");
+        Console.WriteLine($"User number = {us10} ");
+        Console.WriteLine($"User number = {us11} ");
+        Console.WriteLine($"User number = {us12} ");
+        Console.WriteLine($"User number = {us13} ");
+        Console.WriteLine($"User number = {us14} ");
+        Console.WriteLine($"User number = {us15} ");
+
+        Console.ReadKey();
+    }
+
+}
