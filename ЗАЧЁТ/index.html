@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Учебный центр «Грани» — современное образование</title>
+  <!-- Bootstrap 5.3 CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts (Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <!-- Красивый CSS (перенесите в css/style.css) -->
+  <style>
+    :root {
+      --primary: #4361ee;
+      --primary-soft: #4895ef;
+      --secondary: #3f37c9;
+      --accent: #f72585;
+      --light: #f8f9fa;
+      --dark: #212529;
+      --success: #4cc9f0;
+      --gradient-1: linear-gradient(135deg, #4361ee, #4895ef);
+      --gradient-2: linear-gradient(135deg, #f72585, #b5179e);
+      --shadow-sm: 0 10px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.02);
+      --shadow-hover: 0 20px 35px -8px rgba(67, 97, 238, 0.15), 0 10px 15px -6px rgba(0,0,0,0.05);
+      --border-radius-card: 1.2rem;
+      --border-radius-btn: 2rem;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    .navbar {
+      background: rgba(255,255,255,0.8);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+    }
+    .navbar-brand {
+      font-weight: 700;
+      background: var(--gradient-1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-size: 1.5rem;
+    }
+    .nav-link {
+      font-weight: 500;
+      color: var(--dark) !important;
+      transition: color 0.2s;
+    }
+    .nav-link:hover {
+      color: var(--primary) !important;
+    }
+    .btn-outline-primary {
+      border-color: var(--primary);
+      color: var(--primary);
+      border-radius: var(--border-radius-btn);
+      padding: 0.5rem 1.2rem;
+      transition: all 0.2s;
+    }
+    .btn-outline-primary:hover {
+      background: var(--gradient-1);
+      border-color: transparent;
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .hero {
+      background: linear-gradient(145deg, #ffffff 0%, #f1f5ff 100%);
+      border-radius: 2.5rem;
+      padding: 4rem 3rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .display-4 {
+      font-weight: 700;
+      background: var(--gradient-1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .btn-primary {
+      background: var(--gradient-1);
+      border: none;
+      border-radius: var(--border-radius-btn);
+      padding: 0.7rem 2rem;
+      font-weight: 600;
+      transition: all 0.2s;
+      box-shadow: 0 8px 18px rgba(67, 97, 238, 0.2);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 25px rgba(67, 97, 238, 0.3);
+    }
+    .btn-outline-primary {
+      border: 2px solid var(--primary);
+      background: transparent;
+    }
+
+    .card {
+      border: none;
+      border-radius: var(--border-radius-card);
+      transition: all 0.2s;
+      box-shadow: var(--shadow-sm);
+      background: white;
+      overflow: hidden;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-hover);
+    }
+    .card-body {
+      padding: 2rem 1.5rem;
+    }
+    .display-4 {
+      font-size: 3rem;
+      line-height: 1;
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+    .card:hover .card-img-top {
+      transform: scale(1.03);
+    }
+    .badge {
+      font-weight: 500;
+      padding: 0.5rem 0.9rem;
+      border-radius: 2rem;
+      background: var(--light);
+      color: var(--dark);
+    }
+    .badge.bg-primary { background: var(--primary-soft) !important; color: white; }
+    .badge.bg-warning { background: #ffe69c !important; color: #7b4e00; }
+    .badge.bg-info { background: #cff4fc !important; color: #055160; }
+    .badge.bg-success { background: #d1e7dd !important; color: #0a3622; }
+
+    #gallery img {
+      transition: all 0.3s;
+      border-radius: 1.2rem;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      box-shadow: var(--shadow-sm);
+    }
+    #gallery img:hover {
+      transform: scale(1.02);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .form-control, .form-select {
+      border-radius: 1rem;
+      border: 1.5px solid #e9ecef;
+      padding: 0.8rem 1.2rem;
+      transition: border 0.2s, box-shadow 0.2s;
+    }
+    .form-control:focus, .form-select:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 4px rgba(67, 97, 238, 0.1);
+    }
+    .form-label {
+      font-weight: 600;
+      color: var(--dark);
+      margin-bottom: 0.5rem;
+    }
+    .form-text {
+      color: #6c757d;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      background: var(--dark);
+      color: rgba(255,255,255,0.8);
+    }
+    footer a {
+      color: rgba(255,255,255,0.6);
+      transition: color 0.2s;
+    }
+    footer a:hover {
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 2rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">📚 Грани</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">О центре</a></li>
+          <li class="nav-item"><a class="nav-link" href="#courses">Курсы</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Галерея</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="d-lg-none d-flex flex-wrap gap-2 mt-2">
+        <a href="#about" class="btn btn-outline-primary btn-sm">О центре</a>
+        <a href="#courses" class="btn btn-outline-primary btn-sm">Курсы</a>
+        <a href="#gallery" class="btn btn-outline-primary btn-sm">Галерея</a>
+        <a href="#contact" class="btn btn-outline-primary btn-sm">Контакты</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- ГЕРОЙ (блок B) с локальным изображением -->
+  <section class="container my-5">
+    <div class="hero row align-items-center g-5">
+      <div class="col-lg-6">
+        <h1 class="display-4 fw-bold mb-4">Учебный центр «Грани»</h1>
+        <p class="lead text-secondary mb-4">Раскрываем таланты, помогаем найти любимое дело. Современные программы, опытные наставники и гибкий формат обучения.</p>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="#courses" class="btn btn-primary btn-lg">Выбрать курс</a>
+          <a href="#contact" class="btn btn-outline-primary btn-lg">Получить консультацию</a>
+        </div>
+      </div>
+      <div class="col-lg-6 text-center">
+        <!-- Локальный файл: hero-students.jpg -->
+        <img src="images/hero-students.jpg" alt="Студенты за работой в современном классе" class="img-fluid rounded-4 shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- ПРЕИМУЩЕСТВА (блок C) — здесь иконки текстом, изображений нет -->
+
+  <!-- КУРСЫ (блок D) с локальными изображениями -->
+  <section id="courses" class="container py-5 bg-light rounded-5">
+    <h2 class="text-center mb-5 display-6 fw-semibold">Наши популярные курсы</h2>
+    <div class="row g-4">
+      <!-- Курс 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="images/course-web.jpg" class="card-img-top" alt="Ноутбук с кодом — веб-разработка">
+          <div class="card-body">
+            <h3 class="h5 fw-bold">Веб-разработчик с нуля</h3>
+            <p class="text-secondary">HTML, CSS, JavaScript, React, Node.js. 6 месяцев интенсивной практики.</p>
+            <div class="mb-3">
+              <span class="badge bg-primary me-1">С нуля</span>
+              <span class="badge bg-warning me-1">6 месяцев</span>
+              <span class="badge bg-info">онлайн</span>
+            </div>
+            <a href="#" class="btn btn-outline-primary w-100">Узнать больше</a>
+          </div>
+        </div>
+      </div>
+      <!-- Курс 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="images/course-design.jpg" class="card-img-top" alt="Палитра и графический планшет — дизайн">
+          <div class="card-body">
+            <h3 class="h5 fw-bold">Графический дизайн</h3>
+            <p class="text-secondary">Figma, Photoshop, Illustrator, создание брендов и упаковки. 4 месяца.</p>
+            <div class="mb-3">
+              <span class="badge bg-primary me-1">С нуля</span>
+              <span class="badge bg-warning me-1">4 месяца</span>
+              <span class="badge bg-info">онлайн</span>
+            </div>
+            <a href="#" class="btn btn-outline-primary w-100">Узнать больше</a>
+          </div>
+        </div>
+      </div>
+      <!-- Курс 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="images/course-english.jpg" class="card-img-top" alt="Книги и наушники — английский язык">
+          <div class="card-body">
+            <h3 class="h5 fw-bold">Английский для IT</h3>
+            <p class="text-secondary">Технический английский, переговоры, IT-терминология. Уровень Intermediate.</p>
+            <div class="mb-3">
+              <span class="badge bg-success me-1">Средний</span>
+              <span class="badge bg-warning me-1">3 месяца</span>
+              <span class="badge bg-info">онлайн</span>
+            </div>
+            <a href="#" class="btn btn-outline-primary w-100">Узнать больше</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ГАЛЕРЕЯ (блок E) с локальными изображениями -->
+  <section id="gallery" class="container py-5">
+    <h2 class="text-center mb-5 display-6 fw-semibold">Жизнь центра в фотографиях</h2>
+    <div class="row g-3">
+      <div class="col-6 col-md-3">
+        <img src="images/gallery-discussion.jpg" alt="Студенты за обсуждением проекта в светлой аудитории" class="img-fluid">
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="images/gallery-lecture.jpg" alt="Лекция в современном зале с проектором" class="img-fluid">
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="images/gallery-student-laptop.jpg" alt="Крупный план: студентка работает за ноутбуком" class="img-fluid">
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="images/gallery-graduation.jpg" alt="Выпускники с сертификатами" class="img-fluid">
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="images/gallery-computer-class.jpg" alt="Компьютерный класс с современными моноблоками" class="img-fluid">
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="images/gallery-coworking.jpg" alt="Уютная зона коворкинга" class="img-fluid">
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="images/gallery-masterclass.jpg" alt="Мастер-класс приглашённого эксперта" class="img-fluid">
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="images/gallery-group.jpg" alt="Групповое фото студентов и преподавателей" class="img-fluid">
+      </div>
+    </div>
+  </section>
+
+  <!-- ФОРМА (блок F) — без изменений -->
+  <section id="contact" class="container py-5 bg-light rounded-5">
+    <h2 class="text-center mb-4 display-6 fw-semibold">Остались вопросы? Напишите нам</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <form action="#" method="post">
+          <div class="mb-3">
+            <label for="name" class="form-label">Имя</label>
+            <input type="text" class="form-control" id="name" placeholder="Как к вам обращаться?" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="example@mail.ru" required>
+            <div class="form-text">Ответим в течение рабочего дня, без спама.</div>
+          </div>
+          <div class="mb-3">
+            <label for="topic" class="form-label">Тема обращения</label>
+            <select class="form-select" id="topic" required>
+              <option value="" selected disabled>Выберите тему</option>
+              <option value="courses">Запись на курс</option>
+              <option value="price">Стоимость и скидки</option>
+              <option value="partnership">Сотрудничество</option>
+              <option value="other">Другое</option>
+            </select>
+          </div>
+          <div class="mb-4">
+            <label for="message" class="form-label">Сообщение</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Напишите ваш вопрос..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary px-5 py-3 w-100">Отправить сообщение</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="py-4 mt-5">
+  <div class="container d-flex flex-wrap justify-content-between align-items-center">
+    <p class="mb-0">© 2025 Учебный центр «Грани»</p>
+    <div class="d-flex gap-4">
+      <a href="#" class="text-decoration-none">Наверх</a>
+      <a href="#contact" class="text-decoration-none">Контакты</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
